@@ -26,7 +26,8 @@ public class ServiceNuitsDemo implements ServiceNuits {
       LocalTime t = LocalTime.of(min / 60, min % 60);
       double freq = 20.0 + rng.nextDouble() * 100.0;
       // On fait tourner 6 enregistrements de démonstration : deux lignes voisines
-      // pointent toujours vers des fichiers différents (le composant recharge à la sélection).
+      // pointent toujours vers des fichiers différents (le composant recharge à la
+      // sélection).
       String audio = "seq-" + ((i % 6) + 1) + ".wav";
       nuit.getSequences().add(new Sequence(t, freq, 5, audio));
     }
